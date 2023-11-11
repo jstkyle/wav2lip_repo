@@ -1,0 +1,16 @@
+version: "3.9"
+
+# docker compose run --service-ports --name compressed-wav2lip-hksong compressed-wav2lip bash
+
+services:
+  compressed-wav2lip:
+    image: compressed-wav2lip:dev
+    build: ./
+    container_name: efficient-wav2lip-hksong
+    ipc: host
+    ports:
+      - "7860:7860"
+    volumes:
+      - /data2/hksong/compressed-wav2lip:/workspace
+      - /data2/hksong/DATA:/DATA
+      - /data2/hksong/LOG:/LOG

@@ -1,0 +1,9 @@
+gradio==3.28.0
+iou==0.1.0
+librosa==0.9.1
+lws==1.2.7
+numpy==1.22.3
+opencv-python==4.5.5.64
+scipy==1.7.3
+torch==1.12.0
+tqdm==4.63.0
